@@ -14,24 +14,29 @@ class UsersSeeder extends Seeder
     public function run(): void
     {
             User::create([
-                'name'=>'User',
-                'email'=>'user@itsolutionstuff.com',
-                 'is_admin'=>'0',
-                'password'=> bcrypt('123456'),
+                'name'=>'banse',
+                'email'=>'banse@gmail.com',
+                'photo'=>'02.jpg',
+                'numero'=>'0022657267384',
+                'video'=>'testvideo',
+                'cv'=>'lecv',
+                'realisation'=>'une application web',
+                'is_admin'=>'0',
+                'password'=> bcrypt('123456')
+            ]);
+
+            // User::create([
+            //     'name'=>'Admin',
+            //     'email'=>'admin@itsolutionstuff.com',
+            //      'is_admin'=>'1',
+            //     'password'=> bcrypt('123456'),
+            // ]);
+            // User::create([
+            //     'name'=>'Managerr',
+            //     'email'=>'manager@itsolutionstuff.com',
+            //      'is_admin'=>'2',
+            //     'password'=> bcrypt('123456'),
  
-            ]);
-            User::create([
-                'name'=>'Admin',
-                'email'=>'admin@itsolutionstuff.com',
-                 'is_admin'=>'1',
-                'password'=> bcrypt('123456'),
-            ]);
-            User::create([
-                'name'=>'Managerr',
-                'email'=>'manager@itsolutionstuff.com',
-                 'is_admin'=>'2',
-                'password'=> bcrypt('123456'),
- 
-            ]);
+            // ]);
   } 
 }

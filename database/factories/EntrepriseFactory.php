@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -16,8 +17,14 @@ class EntrepriseFactory extends Factory
      */
     public function definition(): array
     {
+        $user_id= User::pluck('id');
+
         return [
-            //
-        ];
+            'domaine' =>$this->faker->sentence(1, true),
+            'anne' => $this->faker->year,
+            'mission' => $this->faker->paragraph(2),
+            'vision' => $this->faker->paragraph(1),
+            'user_id' => $this-> faker->randomElement($user_id),      
+          ];
     }
 }

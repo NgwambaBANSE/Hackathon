@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Entreprise;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -16,8 +17,14 @@ class ServiceFactory extends Factory
      */
     public function definition(): array
     {
+        $entreprise_id= Entreprise::pluck('id');
+
         return [
-            //
+            'nom_service' =>$this->faker->word,
+            'description' => $this->faker->sentence,
+            'avantage' =>$this->faker->sentence,
+            'differenciation' => $this->faker->sentence,
+            'entreprise_id' => $this-> faker->randomElement($entreprise_id),
         ];
     }
 }

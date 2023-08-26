@@ -2,217 +2,48 @@
 
 @section('content')
 
-
-    <!-- banner section start here -->
-    <section class="banner-section style-1">
-        <div class="container">
-            <div class="section-wrapper">
-                <div class="row align-items-center">
-                    <div class="col-xxl-5 col-xl-6 col-lg-10">
-                        <div class="banner-content">
-                            <h6 class="subtitle text-uppercase fw-medium">Online education</h6>
-                            <h2 class="title"><span class="d-lg-block">Learn The</span> Skills You Need <span class="d-lg-block">To Succeed</span></h2>
-                            <p class="desc">Free online courses from the world’s Leading experts. join 18+ million Learners today.</p>
-                            <form action="/">
-                                <div class="banner-icon">
-                                    <i class="icofont-search"></i>
-                                </div>
-                                <input type="text" placeholder="Keywords of your course">
-                                <button type="submit">Search Course</button>
-                            </form>
-                            <div class="banner-catagory d-flex flex-wrap">
-                                <p>Most Popular : </p>
-                                <ul class="lab-ul d-flex flex-wrap">
-                                    <li><a href="#">Figma</a></li>
-                                    <li><a href="#">Adobe XD</a></li>
-                                    <li><a href="#">illustration</a></li>
-                                    <li><a href="#">Photoshop</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xxl-7 col-xl-6">
-                        <div class="banner-thumb">
-                            <img src="assets/images/banner/01.png" alt="img">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="all-shapes"></div>
-        <div class="cbs-content-list d-none">
-            <ul class="lab-ul">
-                <li class="ccl-shape shape-1"><a href="#">16M Students Happy</a></li>
-                <li class="ccl-shape shape-2"><a href="#">130K+ Total Courses</a></li>
-                <li class="ccl-shape shape-3"><a href="#">89% Successful Students</a></li>
-                <li class="ccl-shape shape-4"><a href="#">23M+ Learners</a></li>
-                <li class="ccl-shape shape-5"><a href="#">36+ Languages</a></li>
-            </ul>
-        </div>
-    </section>
-    <!-- banner section ending here -->
-
-
-    <!-- sponsor section start here -->
-    <div class="sponsor-section section-bg">
-        <div class="container">
-            <div class="section-wrapper">
-                <div class="sponsor-slider">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="sponsor-iten">
-                                <div class="sponsor-thumb">
-                                    <img src="assets/images/sponsor/01.png" alt="sponsor">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="sponsor-iten">
-                                <div class="sponsor-thumb">
-                                    <img src="assets/images/sponsor/02.png" alt="sponsor">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="sponsor-iten">
-                                <div class="sponsor-thumb">
-                                    <img src="assets/images/sponsor/03.png" alt="sponsor">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="sponsor-iten">
-                                <div class="sponsor-thumb">
-                                    <img src="assets/images/sponsor/04.png" alt="sponsor">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="sponsor-iten">
-                                <div class="sponsor-thumb">
-                                    <img src="assets/images/sponsor/05.png" alt="sponsor">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="sponsor-iten">
-                                <div class="sponsor-thumb">
-                                    <img src="assets/images/sponsor/06.png" alt="sponsor">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{{asset('assets/images/manchette.jpeg')}}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 style="color: white; font-size: 25px; font-weight: bold; opacity: 100px ">D-CLIC : former au numérique les talents féminins de demain</h5>
+      </div>
     </div>
-    <!-- sponsor section ending here -->
-
-
-    <!-- category section start here -->
-    <div class="category-section padding-tb">
-        <div class="container">
-            <div class="section-header text-center">
-                <span class="subtitle">Popular Category</span>
-                <h2 class="title">Popular Category For Learn</h2>
-            </div>
-            <div class="section-wrapper">
-                <div class="row g-2 justify-content-center row-cols-xl-6 row-cols-md-3 row-cols-sm-2 row-cols-1">
-                    <div class="col">
-                        <div class="category-item text-center">
-                            <div class="category-inner">
-                                <div class="category-thumb">
-                                    <img src="assets/images/category/icon/01.jpg" alt="category">
-                                </div>
-                                <div class="category-content">
-                                    <a href="course.html"><h6>Computer Science</h6></a>
-                                    <span>24 Course</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="category-item text-center">
-                            <div class="category-inner">
-                                <div class="category-thumb">
-                                    <img src="assets/images/category/icon/02.jpg" alt="category">
-                                </div>
-                                <div class="category-content">
-                                    <a href="course.html"><h6>Civil Engineering</h6></a>
-                                    <span>40 Course</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="category-item text-center">
-                            <div class="category-inner">
-                                <div class="category-thumb">
-                                    <img src="assets/images/category/icon/03.jpg" alt="category">
-                                </div>
-                                <div class="category-content">
-                                    <a href="course.html"><h6>Business Analysis</h6></a>
-                                    <span>27 Course</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="category-item text-center">
-                            <div class="category-inner">
-                                <div class="category-thumb">
-                                    <img src="assets/images/category/icon/04.jpg" alt="category">
-                                </div>
-                                <div class="category-content">
-                                    <a href="course.html"><h6>Data Science Analytics</h6></a>
-                                    <span>28 Course</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="category-item text-center">
-                            <div class="category-inner">
-                                <div class="category-thumb">
-                                    <img src="assets/images/category/icon/05.jpg" alt="category">
-                                </div>
-                                <div class="category-content">
-                                    <a href="course.html"><h6>Learning Management</h6></a>
-                                    <span>78 Course</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="category-item text-center">
-                            <div class="category-inner">
-                                <div class="category-thumb">
-                                    <img src="assets/images/category/icon/06.jpg" alt="category">
-                                </div>
-                                <div class="category-content">
-                                    <a href="course.html"><h6>Computer Engineering</h6></a>
-                                    <span>38 Course</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center mt-5">
-                    <a href="course.html" class="lab-btn"><span>Browse All Categories</span></a>
-                </div>
-            </div>
-        </div>
+    <div class="carousel-item">
+      <img src="{{asset('assets/images/DCLIC_Mad.jpg')}}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 style="color: white; font-size: 25px; font-weight: bold; opacity: 100px ">>A l’occasion de la journée mondiale des compétences des jeunes, le 15 juillet 2023, retour sur le déploiement dans quatre nouveaux pays du programme DCLIC de formation aux métiers du numérique</h5>
+      </div>
     </div>
-    <!-- category section start here -->
-
-
-    <!-- course section start here -->
-    <div class="course-section padding-tb section-bg">
+    <div class="carousel-item">
+      <img src="{{asset('assets/images/DCLIC_PRo.jpg')}}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 style="color: white; font-size: 25px; font-weight: bold; opacity: 100px ">>Pour renforcer les compétences numériques des jeunes de l’espace francophone et multiplier leurs chances d’accéder à des emplois décents, en entreprises et dans l’entreprenariat, l’OIF met en œuvre le programme « D-CLIC, formez-vous au numérique »</h5>
+      </div>
+    </div></h5>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
         <div class="container">
-            <div class="section-header text-center">
-                <span class="subtitle">Featured Courses</span>
-                <h2 class="title">Pick A Course To Get Started</h2>
+            <div class="section-header text-center"><br>
+                <a href="{{ route('evenement') }}"><h2 class="title">EVENEMENTS</h2></a>
             </div>
+            @foreach($evenement as $evenement)
             <div class="section-wrapper">
                 <div class="row g-4 justify-content-center row-cols-xl-3 row-cols-md-2 row-cols-1">
                     <div class="col">
@@ -220,259 +51,16 @@
                             <div class="course-inner">
                                 <div class="course-thumb">
                                     <img src="assets/images/course/01.jpg" alt="course">
+                                    <a href="{{ asset($evenement->photos) }}"></a>
                                 </div>
-                                <div class="course-content">
-                                    <div class="course-price">$30</div>
-                                    <div class="course-category">
-                                        <div class="course-cate">
-                                            <a href="#">Adobe XD</a>
-                                        </div>
-                                        <div class="course-reiew">
-                                            <span class="ratting">
-                                                <i class="icofont-ui-rating"></i>
-                                                <i class="icofont-ui-rating"></i>
-                                                <i class="icofont-ui-rating"></i>
-                                                <i class="icofont-ui-rating"></i>
-                                                <i class="icofont-ui-rating"></i>
-                                            </span>
-                                            <span class="ratting-count">
-                                                03 reviews
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <a href="course-single.html"><h5>Fundamentals of Adobe XD Theory Learn New</h5></a>
-                                    <div class="course-details">
-                                        <div class="couse-count"><i class="icofont-video-alt"></i> 18x Lesson</div>
-                                        <div class="couse-topic"><i class="icofont-signal"></i> Online Class</div>
-                                    </div>
-                                    <div class="course-footer">
-                                        <div class="course-author">
-                                            <img src="assets/images/course/author/01.jpg" alt="course author">
-                                            <a href="team-single.html" class="ca-name">William Smith</a>
-                                        </div>
-                                        <div class="course-btn">
-                                            <a href="course-single.html" class="lab-btn-text">Read More <i class="icofont-external-link"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
+                                <h6>{{ $evenement->titre}}</h6>
+                                <h2>{{ $evenement->description}}</h2>
+                                <h2>{{ $evenement->lieu}}</h2>
+                                <h2>{{ $evenement->date}}</h2>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="course-item">
-                            <div class="course-inner">
-                                <div class="course-thumb">
-                                    <img src="assets/images/course/02.jpg" alt="course">
-                                </div>
-                                <div class="course-content">
-                                    <div class="course-price">$30</div>
-                                    <div class="course-category">
-                                        <div class="course-cate">
-                                            <a href="#">Photoshop</a>
-                                        </div>
-                                        <div class="course-reiew">
-                                            <span class="ratting">
-                                                <i class="icofont-ui-rating"></i>
-                                                <i class="icofont-ui-rating"></i>
-                                                <i class="icofont-ui-rating"></i>
-                                                <i class="icofont-ui-rating"></i>
-                                                <i class="icofont-ui-rating"></i>
-                                            </span>
-                                            <span class="ratting-count">
-                                                03 reviews
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <a href="course-single.html"><h5>Certified Graphic Design with Free Project Course</h5></a>
-                                    <div class="course-details">
-                                        <div class="couse-count"><i class="icofont-video-alt"></i> 18x Lesson</div>
-                                        <div class="couse-topic"><i class="icofont-signal"></i> Online Class</div>
-                                    </div>
-                                    <div class="course-footer">
-                                        <div class="course-author">
-                                            <img src="assets/images/course/author/02.jpg" alt="course author">
-                                            <a href="team-single.html" class="ca-name">Lora Smith</a>
-                                        </div>
-                                        <div class="course-btn">
-                                            <a href="course-single.html" class="lab-btn-text">Read More <i class="icofont-external-link"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="course-item">
-                            <div class="course-inner">
-                                <div class="course-thumb">
-                                    <img src="assets/images/course/03.jpg" alt="course">
-                                </div>
-                                <div class="course-content">
-                                    <div class="course-price">$30</div>
-                                    <div class="course-category">
-                                        <div class="course-cate">
-                                            <a href="#">Photoshop</a>
-                                        </div>
-                                        <div class="course-reiew">
-                                            <span class="ratting">
-                                                <i class="icofont-ui-rating"></i>
-                                                <i class="icofont-ui-rating"></i>
-                                                <i class="icofont-ui-rating"></i>
-                                                <i class="icofont-ui-rating"></i>
-                                                <i class="icofont-ui-rating"></i>
-                                            </span>
-                                            <span class="ratting-count">
-                                                03 reviews
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <a href="course-single.html"><h5>Theory Learn New Student And Fundamentals</h5></a>
-                                    <div class="course-details">
-                                        <div class="couse-count"><i class="icofont-video-alt"></i> 18x Lesson</div>
-                                        <div class="couse-topic"><i class="icofont-signal"></i> Online Class</div>
-                                    </div>
-                                    <div class="course-footer">
-                                        <div class="course-author">
-                                            <img src="assets/images/course/author/03.jpg" alt="course author">
-                                            <a href="team-single.html" class="ca-name">Robot Smith</a>
-                                        </div>
-                                        <div class="course-btn">
-                                            <a href="course-single.html" class="lab-btn-text">Read More <i class="icofont-external-link"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="course-item">
-                            <div class="course-inner">
-                                <div class="course-thumb">
-                                    <img src="assets/images/course/04.jpg" alt="course">
-                                </div>
-                                <div class="course-content">
-                                    <div class="course-price">$30</div>
-                                    <div class="course-category">
-                                        <div class="course-cate">
-                                            <a href="#">Adobe XD</a>
-                                        </div>
-                                        <div class="course-reiew">
-                                            <span class="ratting">
-                                                <i class="icofont-ui-rating"></i>
-                                                <i class="icofont-ui-rating"></i>
-                                                <i class="icofont-ui-rating"></i>
-                                                <i class="icofont-ui-rating"></i>
-                                                <i class="icofont-ui-rating"></i>
-                                            </span>
-                                            <span class="ratting-count">
-                                                03 reviews
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <a href="course-single.html"><h5>Computer Fundamentals Basic Startup Ultricies Vitae</h5></a>
-                                    <div class="course-details">
-                                        <div class="couse-count"><i class="icofont-video-alt"></i> 18x Lesson</div>
-                                        <div class="couse-topic"><i class="icofont-signal"></i> Online Class</div>
-                                    </div>
-                                    <div class="course-footer">
-                                        <div class="course-author">
-                                            <img src="assets/images/course/author/04.jpg" alt="course author">
-                                            <a href="team-single.html" class="ca-name">Zinat Zaara</a>
-                                        </div>
-                                        <div class="course-btn">
-                                            <a href="course-single.html" class="lab-btn-text">Read More <i class="icofont-external-link"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="course-item">
-                            <div class="course-inner">
-                                <div class="course-thumb">
-                                    <img src="assets/images/course/05.jpg" alt="course">
-                                </div>
-                                <div class="course-content">
-                                    <div class="course-price">$30</div>
-                                    <div class="course-category">
-                                        <div class="course-cate">
-                                            <a href="#">Adobe XD</a>
-                                        </div>
-                                        <div class="course-reiew">
-                                            <span class="ratting">
-                                                <i class="icofont-ui-rating"></i>
-                                                <i class="icofont-ui-rating"></i>
-                                                <i class="icofont-ui-rating"></i>
-                                                <i class="icofont-ui-rating"></i>
-                                                <i class="icofont-ui-rating"></i>
-                                            </span>
-                                            <span class="ratting-count">
-                                                03 reviews
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <a href="course-single.html"><h5>Boozy Halloween Drinks for the Grown Eleifend Kuismod</h5></a>
-                                    <div class="course-details">
-                                        <div class="couse-count"><i class="icofont-video-alt"></i> 18x Lesson</div>
-                                        <div class="couse-topic"><i class="icofont-signal"></i> Online Class</div>
-                                    </div>
-                                    <div class="course-footer">
-                                        <div class="course-author">
-                                            <img src="assets/images/course/author/05.jpg" alt="course author">
-                                            <a href="team-single.html" class="ca-name">Billy Rivera</a>
-                                        </div>
-                                        <div class="course-btn">
-                                            <a href="course-single.html" class="lab-btn-text">Read More <i class="icofont-external-link"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="course-item">
-                            <div class="course-inner">
-                                <div class="course-thumb">
-                                    <img src="assets/images/course/06.jpg" alt="course">
-                                </div>
-                                <div class="course-content">
-                                    <div class="course-price">$30</div>
-                                    <div class="course-category">
-                                        <div class="course-cate">
-                                            <a href="#">Adobe XD</a>
-                                        </div>
-                                        <div class="course-reiew">
-                                            <span class="ratting">
-                                                <i class="icofont-ui-rating"></i>
-                                                <i class="icofont-ui-rating"></i>
-                                                <i class="icofont-ui-rating"></i>
-                                                <i class="icofont-ui-rating"></i>
-                                                <i class="icofont-ui-rating"></i>
-                                            </span>
-                                            <span class="ratting-count">
-                                                03 reviews
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <a href="course-single.html"><h5>Student Want to Learn About Science And Arts</h5></a>
-                                    <div class="course-details">
-                                        <div class="couse-count"><i class="icofont-video-alt"></i> 18x Lesson</div>
-                                        <div class="couse-topic"><i class="icofont-signal"></i> Online Class</div>
-                                    </div>
-                                    <div class="course-footer">
-                                        <div class="course-author">
-                                            <img src="assets/images/course/author/06.jpg" alt="course author">
-                                            <a href="team-single.html" class="ca-name">Subrina Kabir</a>
-                                        </div>
-                                        <div class="course-btn">
-                                            <a href="course-single.html" class="lab-btn-text">Read More <i class="icofont-external-link"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>

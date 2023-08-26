@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +14,9 @@
     <link rel="stylesheet" href="{{ asset('assets/css/swiper.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/lightcase.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
+
 <body>
 
     <!-- preloader start here -->
@@ -64,20 +67,21 @@
                                 <li>
                                     <a href="#0">Home</a>
                                     <ul class="lab-ul">
-                                        <li><a href="index.html" class="active">Evènements</a></li>
+
+                                        <li><a href="evenement">Evènement</a></li>
                                         <li><a href="index-2.html">Home Two</a></li>
 
                                     </ul>
                                 </li>
-                                
+
                                 <li>
                                     <a href="#0">Forum</a>
                                     <ul class="lab-ul">
                                         <li><a href="course.html">D-CLIC
-                                            PRO</a></li>
+                                                PRO</a></li>
                                         <li><a href="course-single.html">Programme DCLIC d</a></li>
                                         <li><a href="course-single.html">Partenaire</a></li>
-    
+
                                     </ul>
                                 </li>
                                 <li>
@@ -89,7 +93,7 @@
                                         <li><a href="course-single.html">Offres d'emploi </a></li>
                                         <li><a href="course-single.html">Volontariat </a></li>
                                         <li><a href="course-single.html">Promotion de service</a></li>
-    
+
                                     </ul>
                                 </li>
                                 <li>
@@ -121,7 +125,7 @@
                             </ul>
                         </div>
                         @guest
-                            @if (Route::has('login'))
+                        @if (Route::has('login'))
                         <a href="{{ route('login') }}" class="login"><i class="icofont-user"></i> <span>Connexion</span> </a>
                         @endif
 
@@ -131,12 +135,7 @@
                         @endif
                         @else
                         <a href="" class="signup"><i class="icofont-users"></i>{{ Auth::user()->name }} </a>
-                        <a href="{{ route('logout') }}" class="signup"><i onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">Déconnexion </a>
-                         <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                          @csrf
-                         </form>
-                         @endguest
+                        @endguest
 
                         <!-- toggle icons -->
                         <div class="header-bar d-lg-none">
@@ -155,46 +154,45 @@
     <!-- header section ending here -->
     @yield('content')
 
-            <!-- Footer Section Start Here -->
-            <footer>
-            <div class="footer-top padding-tb pt-0">
-                <div class="container">
-                    <div class="row g-4 row-cols-xl-4 row-cols-md-2 row-cols-1 justify-content-center">
-                        <div class="col">
-                            <div class="footer-item">
-                                <div class="footer-inner">
-                                    <div class="footer-content">
-                                        <div class="title">
-                                            <h4>Liens utiles</h4>
-                                        </div>
-                                        <div class="content">
-                                            <ul class="lab-ul">
-                                                <li><a href="#">About Us</a></li>
-                                                <li><a href="#">AUF</a></li>
-                                                <li><a href="#">OIF</a></li>
-                                                <li><a href="#">D-CLIC</a></li>
-                                            </ul>
-                                        </div>
+    <!-- Footer Section Start Here -->
+    <footer>
+        <div class="footer-top padding-tb pt-0">
+            <div class="container">
+                <div class="row g-4 row-cols-xl-4 row-cols-md-2 row-cols-1 justify-content-center">
+                    <div class="col">
+                        <div class="footer-item">
+                            <div class="footer-inner">
+                                <div class="footer-content">
+                                    <div class="title">
+                                        <h4>Liens utiles</h4>
+                                    </div>
+                                    <div class="content">
+                                        <ul class="lab-ul">
+                                            <li><a href="#">About Us</a></li>
+                                            <li><a href="#">AUF</a></li>
+                                            <li><a href="#">OIF</a></li>
+                                            <li><a href="#">D-CLIC</a></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="footer-item">
-                                <div class="footer-inner">
-                                    <div class="footer-content">
-                                        <div class="title">
-                                            <h4>Menu</h4>
-                                        </div>
-                                        <div class="content">
-                                            <ul class="lab-ul">
-                                                <li><a href="#">Evènements</a></li>
-                                                <li><a href="#">Offre d'emplois</a></li>
-                                                <li><a href="#">CVthèque</a></li>
-                                                <li><a href="#">Blog</a></li>
-                                                <li><a href="#">Apprenants</a></li>
-                                            </ul>
-                                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="footer-item">
+                            <div class="footer-inner">
+                                <div class="footer-content">
+                                    <div class="title">
+                                        <h4>Menu</h4>
+                                    </div>
+                                    <div class="content">
+                                        <ul class="lab-ul">
+                                            <li><a href="#">Evènements</a></li>
+                                            <li><a href="#">Offre d'emplois</a></li>
+                                            <li><a href="#">CVthèque</a></li>
+                                            <li><a href="#">Blog</a></li>
+                                            <li><a href="#">Apprenants</a></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -202,15 +200,16 @@
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom style-2">
-                <div class="container">
-                    <div class="section-wrapper">
-                        <p>&copy; 2023 <a href="index.html">D-CLIC PRO</a></p>
-                    </div>
+        </div>
+        <div class="footer-bottom style-2">
+            <div class="container">
+                <div class="section-wrapper">
+                    <p>&copy; 2023 <a href="index.html">D-CLIC PRO</a></p>
                 </div>
             </div>
-        </footer>
-        <!-- Footer Section Ending Here -->
+        </div>
+    </footer>
+    <!-- Footer Section Ending Here -->
     </div>
     <!-- footer -->
 
@@ -223,6 +222,8 @@
     <script src="{{ asset('assets/js/counter-up.js') }}"></script>
     <script src="{{ asset('assets/js/isotope.pkgd.js') }}"></script>
     <script src="{{ asset('assets/js/functions.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
 </body>
+
 </html>

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AccueilController;
+use App\Http\Controllers\EvenementController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Auth;
@@ -17,9 +18,13 @@ use Illuminate\Support\Facades\Auth;
 */
 
 Route::get('/', [AccueilController::class,'acceuil'])->name('accueil');
+Route::get('evenement', [EvenementController::class,'traiterEven'])->name('evenement');
+;
 
 Auth::routes();
 
 Route::get('home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('admin/home', [HomeController::class, 'adminHome'])->name('admin.home')->middleware('is_admin');
+
+
 

@@ -1,7 +1,8 @@
 <?php
    
 namespace App\Http\Controllers;
-  
+
+use App\Models\Evenement;
 use Illuminate\Http\Request;
    
 class HomeController extends Controller
@@ -23,7 +24,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $evenement = Evenement::all();
+        return view('home',compact('evenement'));
     }
   
     /**

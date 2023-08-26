@@ -69,7 +69,7 @@
                                 <li>
                                     <a href="#0">Home</a>
                                     <ul class="lab-ul">
-                                        <li><a href="index.html" class="active">Evènements</a></li>
+                                        <li><a href="{{ route('evenement') }}" class="active">Evènements</a></li>
                                         <li><a href="index-2.html">Home Two</a></li>
 
                                     </ul>

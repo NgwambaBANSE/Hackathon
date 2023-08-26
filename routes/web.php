@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\AccueilController;
+use App\Http\Controllers\ApprenantController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Auth;
@@ -18,6 +20,9 @@ use Illuminate\Support\Facades\Auth;
 
 Route::get('/', [AccueilController::class,'acceuil'])->name('accueil');
 
+Route::get('cvtheque', [AccueilController::class,'cvtheque'])->name('cvtheque');
+Route::get('offre', [AccueilController::class,'offre'])->name('offre');
+Route::resource('user', UserController::class)->middleware('auth');
 Auth::routes();
 
 Route::get('home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

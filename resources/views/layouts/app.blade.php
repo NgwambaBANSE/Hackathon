@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edukon</title>
-    <link rel="shortcut icon" href="{{ asset('assets/images/x-icon.png') }}" type="image/x-icon">
+    <title>dclic-pro-oif-</title>
+    <link rel="shortcut icon" href="{{ asset('assets/images/logo/02.png') }}" type="image/x-icon">
 
     <link rel="stylesheet" href="{{ asset('assets/css/animate.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
@@ -81,15 +81,12 @@
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="#0">Apprenants</a>
+                                    <a href="{{ route('user.index') }}">Apprenants</a>
                                     <ul class="lab-ul">
-                                        <li><a href="course.html">Portfolio</a></li>
-                                        <li><a href="course-single.html">Demonstration</a></li>
-                                        <li><a href="course-single.html">CVthèque </a></li>
-                                        <li><a href="course-single.html">Offres d'emploi </a></li>
-                                        <li><a href="course-single.html">Volontariat </a></li>
-                                        <li><a href="course-single.html">Promotion de service</a></li>
-    
+                                        <li><a href="{{ route('cvtheque') }}">CVthèque </a></li>
+                                        <li><a href="{{ route('offre') }}">Offres d'emploi </a></li>
+                                        <li><a href="">Volontariat </a></li>
+                                        <li><a href="">Promotion de service</a></li>
                                     </ul>
                                 </li>
                                 <li>
@@ -117,7 +114,6 @@
                                         <li><a href="404.html">404</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="contact.html">Contact</a></li>
                             </ul>
                         </div>
                         @guest
@@ -130,11 +126,7 @@
                         <a href="{{ route('register') }}" class="signup"><i class="icofont-users"></i> <span>Inscription</span> </a>
                         @endif
                         @else
-                        <a href="" class="signup"><i class="icofont-users"></i>{{ Auth::user()->name }} </a>
-                        <a href="{{ route('logout') }}" class="signup"><i onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">Déconnexion </a>
-                         <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                          @csrf
+                        <a href="" class="login"><i class="icofont-users"></i>{{ Auth::user()->name }} </a>
                          </form>
                          @endguest
 
@@ -154,6 +146,7 @@
     </header>
     <!-- header section ending here -->
     @yield('content')
+    <div class="news-footer-wrap">
 
             <!-- Footer Section Start Here -->
             <footer>

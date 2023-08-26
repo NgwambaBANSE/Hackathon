@@ -3,6 +3,7 @@
 use App\Http\Controllers\AccueilController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ForumController;
 use Illuminate\Support\Facades\Auth;
 
 /*
@@ -19,6 +20,7 @@ use Illuminate\Support\Facades\Auth;
 Route::get('/', [AccueilController::class,'acceuil'])->name('accueil');
 
 Auth::routes();
+Route::get('programme', [App\Http\Controllers\ForumController::class, 'programme'])->name('programme');
 
 Route::get('home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('admin/home', [HomeController::class, 'adminHome'])->name('admin.home')->middleware('is_admin');

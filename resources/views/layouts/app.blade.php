@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="{{ asset('assets/css/swiper.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/lightcase.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('style/style.css') }}">
+
 </head>
 <body>
 
@@ -117,7 +119,7 @@
                                         <li><a href="404.html">404</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="{{ route('chatify') }}">Chats</a></li>
                             </ul>
                         </div>
                         @guest
@@ -223,6 +225,7 @@
     <script src="{{ asset('assets/js/counter-up.js') }}"></script>
     <script src="{{ asset('assets/js/isotope.pkgd.js') }}"></script>
     <script src="{{ asset('assets/js/functions.js') }}"></script>
+    <script src="{{ asset('style/javaStyle.js') }}"></script>
 
 </body>
 </html>
